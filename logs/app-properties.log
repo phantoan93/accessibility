@@ -1,0 +1,240 @@
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Quét trang: https://devplatform.meetupspark.com/ mất 2482ms
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Quét trang: https://devplatform.meetupspark.com/
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Vấn đề #1: Documents must have <title> element to aid in navigation
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Mô tả: Ensures each HTML document contains a non-empty <title> element
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/document-title?application=axeAPI
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - ["html"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Vấn đề #2: id attribute value must be unique
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Mô tả: Ensures every id attribute value is unique
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/duplicate-id?application=axeAPI
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - [".swiper-slide-active > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5 > svg[viewBox=\"\\30 \\ 0\\ 72\\ 72\"][width=\"\\37 2\"][height=\"\\37 2\"] > defs > clippath"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - [".swiper-slide-next > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5 > svg[viewBox=\"\\30 \\ 0\\ 72\\ 72\"][width=\"\\37 2\"][height=\"\\37 2\"] > defs > clippath"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - [".swiper-slide:nth-child(3) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5 > svg[viewBox=\"\\30 \\ 0\\ 72\\ 72\"][width=\"\\37 2\"][height=\"\\37 2\"] > defs > clippath"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Vấn đề #3: Images must have alternate text
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Mô tả: Ensures <img> elements have alternate text or a role of none or presentation
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/image-alt?application=axeAPI
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - [".landingPageLayout_logo__Aluxm > img"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Vấn đề #4: Document must have one main landmark
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Mô tả: Ensures the document has a main landmark
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/landmark-one-main?application=axeAPI
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - ["html"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Vấn đề #5: Links must have discernible text
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Mô tả: Ensures links have discernible text
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/link-name?application=axeAPI
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - [".landingPageLayout_logo__Aluxm"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Vấn đề #6: Zooming and scaling must not be disabled
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Mô tả: Ensures <meta name="viewport"> does not disable text scaling and zooming
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/meta-viewport?application=axeAPI
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - ["meta[name=\"viewport\"]:nth-child(28)"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Vấn đề #7: Page must contain a level-one heading
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Mô tả: Ensure that the page, or at least one of its frames contains a level-one heading
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/page-has-heading-one?application=axeAPI
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - ["html"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Vấn đề #8: All page content must be contained by landmarks
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Mô tả: Ensures all page content is contained by landmarks
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/region?application=axeAPI
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - ["#next-btn-role-detail"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - [".swiper-slide-active > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - [".swiper-slide-active > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - [".swiper-slide-next > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - [".swiper-slide-next > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_content__M_2UH"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - [".swiper-slide:nth-child(3) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - [".swiper-slide:nth-child(3) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - [".swiper-slide:nth-child(4) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - [".swiper-slide:nth-child(4) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - [".swiper-slide:nth-child(5) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - [".swiper-slide:nth-child(5) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - [".swiper-slide:nth-child(6) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - [".swiper-slide:nth-child(6) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - [".swiper-slide:nth-child(7) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - [".swiper-slide:nth-child(7) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - [".swiper-slide:nth-child(8) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:20:46 [main] LogUtils - [".swiper-slide:nth-child(8) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Quét trang: https://devplatform.meetupspark.com/auth/register?step=0 mất 2398ms
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Quét trang: https://devplatform.meetupspark.com/auth/register?step=0
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Vấn đề #1: Documents must have <title> element to aid in navigation
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Mô tả: Ensures each HTML document contains a non-empty <title> element
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/document-title?application=axeAPI
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - ["html"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Vấn đề #2: id attribute value must be unique
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Mô tả: Ensures every id attribute value is unique
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/duplicate-id?application=axeAPI
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - [".swiper-slide-active > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5 > svg[viewBox=\"\\30 \\ 0\\ 72\\ 72\"][width=\"\\37 2\"][height=\"\\37 2\"] > defs > clippath"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - [".swiper-slide-next > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5 > svg[viewBox=\"\\30 \\ 0\\ 72\\ 72\"][width=\"\\37 2\"][height=\"\\37 2\"] > defs > clippath"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - [".swiper-slide:nth-child(3) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5 > svg[viewBox=\"\\30 \\ 0\\ 72\\ 72\"][width=\"\\37 2\"][height=\"\\37 2\"] > defs > clippath"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Vấn đề #3: Images must have alternate text
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Mô tả: Ensures <img> elements have alternate text or a role of none or presentation
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/image-alt?application=axeAPI
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - [".landingPageLayout_logo__Aluxm > img"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Vấn đề #4: Document must have one main landmark
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Mô tả: Ensures the document has a main landmark
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/landmark-one-main?application=axeAPI
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - ["html"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Vấn đề #5: Links must have discernible text
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Mô tả: Ensures links have discernible text
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/link-name?application=axeAPI
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - [".landingPageLayout_logo__Aluxm"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Vấn đề #6: Zooming and scaling must not be disabled
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Mô tả: Ensures <meta name="viewport"> does not disable text scaling and zooming
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/meta-viewport?application=axeAPI
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - ["meta[name=\"viewport\"]:nth-child(36)"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Vấn đề #7: Page must contain a level-one heading
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Mô tả: Ensure that the page, or at least one of its frames contains a level-one heading
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/page-has-heading-one?application=axeAPI
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - ["html"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Vấn đề #8: All page content must be contained by landmarks
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Mô tả: Ensures all page content is contained by landmarks
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/region?application=axeAPI
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - ["#next-btn-role-detail"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - [".swiper-slide-active > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - [".swiper-slide-active > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - [".swiper-slide-next > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - [".swiper-slide-next > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_content__M_2UH"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - [".swiper-slide:nth-child(3) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - [".swiper-slide:nth-child(3) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - [".swiper-slide:nth-child(4) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - [".swiper-slide:nth-child(4) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - [".swiper-slide:nth-child(5) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - [".swiper-slide:nth-child(5) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - [".swiper-slide:nth-child(6) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - [".swiper-slide:nth-child(6) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - [".swiper-slide:nth-child(7) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - [".swiper-slide:nth-child(7) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - [".swiper-slide:nth-child(8) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:20:49 [main] LogUtils - [".swiper-slide:nth-child(8) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Quét trang: https://devplatform.meetupspark.com/ mất 2463ms
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Quét trang: https://devplatform.meetupspark.com/
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Vấn đề #1: Documents must have <title> element to aid in navigation
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Mô tả: Ensures each HTML document contains a non-empty <title> element
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/document-title?application=axeAPI
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - ["html"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Vấn đề #2: id attribute value must be unique
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Mô tả: Ensures every id attribute value is unique
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/duplicate-id?application=axeAPI
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - [".swiper-slide-active > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5 > svg[viewBox=\"\\30 \\ 0\\ 72\\ 72\"][width=\"\\37 2\"][height=\"\\37 2\"] > defs > clippath"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - [".swiper-slide-next > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5 > svg[viewBox=\"\\30 \\ 0\\ 72\\ 72\"][width=\"\\37 2\"][height=\"\\37 2\"] > defs > clippath"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - [".swiper-slide:nth-child(3) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5 > svg[viewBox=\"\\30 \\ 0\\ 72\\ 72\"][width=\"\\37 2\"][height=\"\\37 2\"] > defs > clippath"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Vấn đề #3: Images must have alternate text
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Mô tả: Ensures <img> elements have alternate text or a role of none or presentation
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/image-alt?application=axeAPI
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - [".landingPageLayout_logo__Aluxm > img"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Vấn đề #4: Document must have one main landmark
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Mô tả: Ensures the document has a main landmark
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/landmark-one-main?application=axeAPI
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - ["html"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Vấn đề #5: Links must have discernible text
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Mô tả: Ensures links have discernible text
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/link-name?application=axeAPI
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - [".landingPageLayout_logo__Aluxm"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Vấn đề #6: Zooming and scaling must not be disabled
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Mô tả: Ensures <meta name="viewport"> does not disable text scaling and zooming
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/meta-viewport?application=axeAPI
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - ["meta[name=\"viewport\"]:nth-child(28)"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Vấn đề #7: Page must contain a level-one heading
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Mô tả: Ensure that the page, or at least one of its frames contains a level-one heading
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/page-has-heading-one?application=axeAPI
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - ["html"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Vấn đề #8: All page content must be contained by landmarks
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Mô tả: Ensures all page content is contained by landmarks
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/region?application=axeAPI
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - ["#next-btn-role-detail"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - [".swiper-slide-active > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - [".swiper-slide-active > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - [".swiper-slide-next > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - [".swiper-slide-next > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - [".swiper-slide:nth-child(3) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - [".swiper-slide:nth-child(3) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_content__M_2UH"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - [".swiper-slide:nth-child(4) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - [".swiper-slide:nth-child(4) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - [".swiper-slide:nth-child(5) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - [".swiper-slide:nth-child(5) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - [".swiper-slide:nth-child(6) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - [".swiper-slide:nth-child(6) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - [".swiper-slide:nth-child(7) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - [".swiper-slide:nth-child(7) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - [".swiper-slide:nth-child(8) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:21:56 [main] LogUtils - [".swiper-slide:nth-child(8) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Quét trang: https://devplatform.meetupspark.com/auth/register?step=0 mất 2388ms
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Quét trang: https://devplatform.meetupspark.com/auth/register?step=0
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Vấn đề #1: Documents must have <title> element to aid in navigation
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Mô tả: Ensures each HTML document contains a non-empty <title> element
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/document-title?application=axeAPI
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - ["html"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Vấn đề #2: id attribute value must be unique
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Mô tả: Ensures every id attribute value is unique
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/duplicate-id?application=axeAPI
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - [".swiper-slide-active > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5 > svg[viewBox=\"\\30 \\ 0\\ 72\\ 72\"][width=\"\\37 2\"][height=\"\\37 2\"] > defs > clippath"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - [".swiper-slide-next > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5 > svg[viewBox=\"\\30 \\ 0\\ 72\\ 72\"][width=\"\\37 2\"][height=\"\\37 2\"] > defs > clippath"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - [".swiper-slide:nth-child(3) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5 > svg[viewBox=\"\\30 \\ 0\\ 72\\ 72\"][width=\"\\37 2\"][height=\"\\37 2\"] > defs > clippath"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Vấn đề #3: Images must have alternate text
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Mô tả: Ensures <img> elements have alternate text or a role of none or presentation
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/image-alt?application=axeAPI
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - [".landingPageLayout_logo__Aluxm > img"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Vấn đề #4: Document must have one main landmark
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Mô tả: Ensures the document has a main landmark
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/landmark-one-main?application=axeAPI
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - ["html"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Vấn đề #5: Links must have discernible text
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Mô tả: Ensures links have discernible text
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/link-name?application=axeAPI
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - [".landingPageLayout_logo__Aluxm"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Vấn đề #6: Zooming and scaling must not be disabled
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Mô tả: Ensures <meta name="viewport"> does not disable text scaling and zooming
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/meta-viewport?application=axeAPI
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - ["meta[name=\"viewport\"]:nth-child(36)"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Vấn đề #7: Page must contain a level-one heading
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Mô tả: Ensure that the page, or at least one of its frames contains a level-one heading
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/page-has-heading-one?application=axeAPI
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - ["html"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Vấn đề #8: All page content must be contained by landmarks
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Mô tả: Ensures all page content is contained by landmarks
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Hướng dẫn khắc phục: https://dequeuniversity.com/rules/axe/3.5/region?application=axeAPI
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - Các phần tử bị ảnh hưởng:
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - ["#next-btn-role-detail"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - [".swiper-slide-active > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - [".swiper-slide-active > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - [".swiper-slide-next > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - [".swiper-slide-next > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - [".swiper-slide:nth-child(3) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - [".swiper-slide:nth-child(3) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_content__M_2UH"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - [".swiper-slide:nth-child(4) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - [".swiper-slide:nth-child(4) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - [".swiper-slide:nth-child(5) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - [".swiper-slide:nth-child(5) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - [".swiper-slide:nth-child(6) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - [".swiper-slide:nth-child(6) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - [".swiper-slide:nth-child(7) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - [".swiper-slide:nth-child(7) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - [".swiper-slide:nth-child(8) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+[INFO ] 2024-10-24 14:21:58 [main] LogUtils - [".swiper-slide:nth-child(8) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5"]

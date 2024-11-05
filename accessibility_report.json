@@ -1,0 +1,870 @@
+[
+    {
+        "testing datetime": "2024-10-24T08:28:04.238262Z",
+        "violations": [
+            {
+                "help": "Documents must have <title> element to aid in navigation",
+                "nodes": [{
+                    "all": [],
+                    "failureSummary": "Fix any of the following:\n  Document does not have a non-empty <title> element",
+                    "impact": "serious",
+                    "html": "<html lang=\"en\" style=\"--primary: #8951ff; --secondary: #977dff; --white: #fff; --blackOrigin: #000; --transparent: transparent; --background-primary: #f7f7f7; --background-secondary: #f8f8ff; --background-purple: #e7dcff; --disable: #b5b5b5; --red-100: #ffe5e5; --red-200: #ff8080; --red-300: #ff5c5c; --red-400: #ff3b3b; --red-500: #e53535; --green-100: #e3fff1; --green-200: #56eba1; --green-300: #39d98a; --green-400: #06c270; --green-500: #05a660; --green-userIcon: #1faf38; --blue-100: #e3eeff; --blue-200: #a8c8fe; --blue-300: #6396fe; --blue-400: #3e7bfa; --blue-500: #2268fa; --blue-blueBlack: #1c1c28; --blue-blueDark: #10004b; --yellow-100: #fffee5; --yellow-200: #fded72; --yellow-300: #fddd48; --yellow-400: #fc0; --yellow-500: #e5b800; --yellow-600: #e57a00; --yellow-pineapple: #f4bf00; --orange-100: #fff8e5; --orange-200: #fccc75; --orange-300: #fdac42; --orange-400: #f80; --orange-500: #e57a00; --teal-100: #e5ffff; --teal-200: #a9eff2; --teal-300: #73dfe7; --teal-400: #00cfde; --teal-500: #00b7c4; --purple-100: #efefff; --purple-200: #d5d5ff; --purple-300: #bdbeff; --purple-400: #9697ff; --purple-500: #7274ff; --magenta-100: #fff0f6; --magenta-200: #ffadd2; --magenta-300: #ff85c0; --magenta-400: #f759ab; --magenta-500: #eb2f96; --black-100: #1c1c28; --black-200: #3e3e3e; --black-300: #636363; --black-400: #8f90a6; --black-500: #c7c9d9; --black-600: #e8e9ee; --black-700: #f1f2f5; --gray: #333; --brown-200: #853800; --chart-100: #977dff; --chart-200: #fddd48; --chart-300: #06c270; --chart-400: #ff85c0; --chart-500: #6396fe; --chart-600: #00cfde; --chart-700: #8f90a6; --chart-800: #bdbeff; --chart-900: #fded72; --chart-1000: #39d98a; --chart-1100: #ffadd2; --chart-1200: #a8c8fe; --chart-1300: #73dfe7; --chart-1400: #c7c9d9; --chart-1500: #d5d5ff; --chart-1600: #fff8be; --chart-1700: #56eba1; --chart-1800: #e3eeff; --chart-1900: #a9eff2;\">",
+                    "none": [],
+                    "any": [{
+                        "data": null,
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "id": "doc-has-title",
+                        "message": "Document does not have a non-empty <title> element"
+                    }],
+                    "target": ["html"]
+                }],
+                "impact": "serious",
+                "description": "Ensure each HTML document contains a non-empty <title> element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/document-title?application=axeAPI",
+                "id": "document-title",
+                "tags": [
+                    "cat.text-alternatives",
+                    "wcag2a",
+                    "wcag242",
+                    "TTv5",
+                    "TT12.a",
+                    "EN-301-549",
+                    "EN-9.2.4.2",
+                    "ACT"
+                ]
+            },
+            {
+                "help": "Images must have alternative text",
+                "nodes": [{
+                    "all": [],
+                    "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+                    "impact": "critical",
+                    "html": "<img src=\"/_next/static/media/logo-app.a29ff0d1.png\">",
+                    "none": [],
+                    "any": [
+                        {
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "critical",
+                            "id": "has-alt",
+                            "message": "Element does not have an alt attribute"
+                        },
+                        {
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "critical",
+                            "id": "aria-label",
+                            "message": "aria-label attribute does not exist or is empty"
+                        },
+                        {
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "critical",
+                            "id": "aria-labelledby",
+                            "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                        },
+                        {
+                            "data": {"messageKey": "noAttr"},
+                            "relatedNodes": [],
+                            "impact": "critical",
+                            "id": "non-empty-title",
+                            "message": "Element has no title attribute"
+                        },
+                        {
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "critical",
+                            "id": "presentational-role",
+                            "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                        }
+                    ],
+                    "target": [".landingPageLayout_logo__Aluxm > img"]
+                }],
+                "impact": "critical",
+                "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/image-alt?application=axeAPI",
+                "id": "image-alt",
+                "tags": [
+                    "cat.text-alternatives",
+                    "wcag2a",
+                    "wcag111",
+                    "section508",
+                    "section508.22.a",
+                    "TTv5",
+                    "TT7.a",
+                    "TT7.b",
+                    "EN-301-549",
+                    "EN-9.1.1.1",
+                    "ACT"
+                ]
+            },
+            {
+                "help": "Document should have one main landmark",
+                "nodes": [{
+                    "all": [{
+                        "data": null,
+                        "relatedNodes": [],
+                        "impact": "moderate",
+                        "id": "page-has-main",
+                        "message": "Document does not have a main landmark"
+                    }],
+                    "failureSummary": "Fix all of the following:\n  Document does not have a main landmark",
+                    "impact": "moderate",
+                    "html": "<html lang=\"en\" style=\"--primary: #8951ff; --secondary: #977dff; --white: #fff; --blackOrigin: #000; --transparent: transparent; --background-primary: #f7f7f7; --background-secondary: #f8f8ff; --background-purple: #e7dcff; --disable: #b5b5b5; --red-100: #ffe5e5; --red-200: #ff8080; --red-300: #ff5c5c; --red-400: #ff3b3b; --red-500: #e53535; --green-100: #e3fff1; --green-200: #56eba1; --green-300: #39d98a; --green-400: #06c270; --green-500: #05a660; --green-userIcon: #1faf38; --blue-100: #e3eeff; --blue-200: #a8c8fe; --blue-300: #6396fe; --blue-400: #3e7bfa; --blue-500: #2268fa; --blue-blueBlack: #1c1c28; --blue-blueDark: #10004b; --yellow-100: #fffee5; --yellow-200: #fded72; --yellow-300: #fddd48; --yellow-400: #fc0; --yellow-500: #e5b800; --yellow-600: #e57a00; --yellow-pineapple: #f4bf00; --orange-100: #fff8e5; --orange-200: #fccc75; --orange-300: #fdac42; --orange-400: #f80; --orange-500: #e57a00; --teal-100: #e5ffff; --teal-200: #a9eff2; --teal-300: #73dfe7; --teal-400: #00cfde; --teal-500: #00b7c4; --purple-100: #efefff; --purple-200: #d5d5ff; --purple-300: #bdbeff; --purple-400: #9697ff; --purple-500: #7274ff; --magenta-100: #fff0f6; --magenta-200: #ffadd2; --magenta-300: #ff85c0; --magenta-400: #f759ab; --magenta-500: #eb2f96; --black-100: #1c1c28; --black-200: #3e3e3e; --black-300: #636363; --black-400: #8f90a6; --black-500: #c7c9d9; --black-600: #e8e9ee; --black-700: #f1f2f5; --gray: #333; --brown-200: #853800; --chart-100: #977dff; --chart-200: #fddd48; --chart-300: #06c270; --chart-400: #ff85c0; --chart-500: #6396fe; --chart-600: #00cfde; --chart-700: #8f90a6; --chart-800: #bdbeff; --chart-900: #fded72; --chart-1000: #39d98a; --chart-1100: #ffadd2; --chart-1200: #a8c8fe; --chart-1300: #73dfe7; --chart-1400: #c7c9d9; --chart-1500: #d5d5ff; --chart-1600: #fff8be; --chart-1700: #56eba1; --chart-1800: #e3eeff; --chart-1900: #a9eff2;\">",
+                    "none": [],
+                    "any": [],
+                    "target": ["html"]
+                }],
+                "impact": "moderate",
+                "description": "Ensure the document has a main landmark",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=axeAPI",
+                "id": "landmark-one-main",
+                "tags": [
+                    "cat.semantics",
+                    "best-practice"
+                ]
+            },
+            {
+                "help": "Links must have discernible text",
+                "nodes": [{
+                    "all": [],
+                    "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+                    "impact": "serious",
+                    "html": "<a class=\"landingPageLayout_logo__Aluxm  hover:cursor-click-white\" href=\"/en\"><img src=\"/_next/static/media/logo-app.a29ff0d1.png\"><\/a>",
+                    "none": [{
+                        "data": null,
+                        "relatedNodes": [],
+                        "impact": "serious",
+                        "id": "focusable-no-name",
+                        "message": "Element is in tab order and does not have accessible text"
+                    }],
+                    "any": [
+                        {
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "id": "has-visible-text",
+                            "message": "Element does not have text that is visible to screen readers"
+                        },
+                        {
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "id": "aria-label",
+                            "message": "aria-label attribute does not exist or is empty"
+                        },
+                        {
+                            "data": null,
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "id": "aria-labelledby",
+                            "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                        },
+                        {
+                            "data": {"messageKey": "noAttr"},
+                            "relatedNodes": [],
+                            "impact": "serious",
+                            "id": "non-empty-title",
+                            "message": "Element has no title attribute"
+                        }
+                    ],
+                    "target": [".landingPageLayout_logo__Aluxm"]
+                }],
+                "impact": "serious",
+                "description": "Ensure links have discernible text",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/link-name?application=axeAPI",
+                "id": "link-name",
+                "tags": [
+                    "cat.name-role-value",
+                    "wcag2a",
+                    "wcag244",
+                    "wcag412",
+                    "section508",
+                    "section508.22.a",
+                    "TTv5",
+                    "TT6.a",
+                    "EN-301-549",
+                    "EN-9.2.4.4",
+                    "EN-9.4.1.2",
+                    "ACT"
+                ]
+            },
+            {
+                "help": "Zooming and scaling must not be disabled",
+                "nodes": [{
+                    "all": [],
+                    "failureSummary": "Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices",
+                    "impact": "critical",
+                    "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">",
+                    "none": [],
+                    "any": [{
+                        "data": "user-scalable=no",
+                        "relatedNodes": [],
+                        "impact": "critical",
+                        "id": "meta-viewport",
+                        "message": "user-scalable=no on <meta> tag disables zooming on mobile devices"
+                    }],
+                    "target": ["meta[name=\"viewport\"]:nth-child(28)"]
+                }],
+                "impact": "critical",
+                "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/meta-viewport?application=axeAPI",
+                "id": "meta-viewport",
+                "tags": [
+                    "cat.sensory-and-visual-cues",
+                    "wcag2aa",
+                    "wcag144",
+                    "EN-301-549",
+                    "EN-9.1.4.4",
+                    "ACT"
+                ]
+            },
+            {
+                "help": "Page should contain a level-one heading",
+                "nodes": [{
+                    "all": [{
+                        "data": null,
+                        "relatedNodes": [],
+                        "impact": "moderate",
+                        "id": "page-has-heading-one",
+                        "message": "Page must have a level-one heading"
+                    }],
+                    "failureSummary": "Fix all of the following:\n  Page must have a level-one heading",
+                    "impact": "moderate",
+                    "html": "<html lang=\"en\" style=\"--primary: #8951ff; --secondary: #977dff; --white: #fff; --blackOrigin: #000; --transparent: transparent; --background-primary: #f7f7f7; --background-secondary: #f8f8ff; --background-purple: #e7dcff; --disable: #b5b5b5; --red-100: #ffe5e5; --red-200: #ff8080; --red-300: #ff5c5c; --red-400: #ff3b3b; --red-500: #e53535; --green-100: #e3fff1; --green-200: #56eba1; --green-300: #39d98a; --green-400: #06c270; --green-500: #05a660; --green-userIcon: #1faf38; --blue-100: #e3eeff; --blue-200: #a8c8fe; --blue-300: #6396fe; --blue-400: #3e7bfa; --blue-500: #2268fa; --blue-blueBlack: #1c1c28; --blue-blueDark: #10004b; --yellow-100: #fffee5; --yellow-200: #fded72; --yellow-300: #fddd48; --yellow-400: #fc0; --yellow-500: #e5b800; --yellow-600: #e57a00; --yellow-pineapple: #f4bf00; --orange-100: #fff8e5; --orange-200: #fccc75; --orange-300: #fdac42; --orange-400: #f80; --orange-500: #e57a00; --teal-100: #e5ffff; --teal-200: #a9eff2; --teal-300: #73dfe7; --teal-400: #00cfde; --teal-500: #00b7c4; --purple-100: #efefff; --purple-200: #d5d5ff; --purple-300: #bdbeff; --purple-400: #9697ff; --purple-500: #7274ff; --magenta-100: #fff0f6; --magenta-200: #ffadd2; --magenta-300: #ff85c0; --magenta-400: #f759ab; --magenta-500: #eb2f96; --black-100: #1c1c28; --black-200: #3e3e3e; --black-300: #636363; --black-400: #8f90a6; --black-500: #c7c9d9; --black-600: #e8e9ee; --black-700: #f1f2f5; --gray: #333; --brown-200: #853800; --chart-100: #977dff; --chart-200: #fddd48; --chart-300: #06c270; --chart-400: #ff85c0; --chart-500: #6396fe; --chart-600: #00cfde; --chart-700: #8f90a6; --chart-800: #bdbeff; --chart-900: #fded72; --chart-1000: #39d98a; --chart-1100: #ffadd2; --chart-1200: #a8c8fe; --chart-1300: #73dfe7; --chart-1400: #c7c9d9; --chart-1500: #d5d5ff; --chart-1600: #fff8be; --chart-1700: #56eba1; --chart-1800: #e3eeff; --chart-1900: #a9eff2;\">",
+                    "none": [],
+                    "any": [],
+                    "target": ["html"]
+                }],
+                "impact": "moderate",
+                "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=axeAPI",
+                "id": "page-has-heading-one",
+                "tags": [
+                    "cat.semantics",
+                    "best-practice"
+                ]
+            },
+            {
+                "help": "All page content should be contained by landmarks",
+                "nodes": [
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<img alt=\"background\" fetchpriority=\"high\" decoding=\"async\" data-nimg=\"fill\" class=\"styles_backgroundImg__OCm3k\" sizes=\"(max-width: 576px) 100vw, (max-width: 1200px) 33vw, 25vw\" srcset=\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=96&amp;q=100 96w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=128&amp;q=100 128w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=256&amp;q=100 256w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=320&amp;q=100 320w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=384&amp;q=100 384w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=576&amp;q=100 576w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=768&amp;q=100 768w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=1024&amp;q=100 1024w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=1366&amp;q=100 1366w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=1600&amp;q=100 1600w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=1920&amp;q=100 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=2560&amp;q=100 2560w\" src=\"https://devplatform.meetupspark.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=2560&amp;q=100\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;\">",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".swiper-slide-active > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<h2 class=\"styles_titleText__DYHYz\">Startup<\/h2>",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".swiper-slide-active > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5 > h2"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<img alt=\"background\" fetchpriority=\"high\" decoding=\"async\" data-nimg=\"fill\" class=\"styles_backgroundImg__OCm3k\" sizes=\"(max-width: 576px) 100vw, (max-width: 1200px) 33vw, 25vw\" srcset=\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=96&amp;q=100 96w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=128&amp;q=100 128w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=256&amp;q=100 256w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=320&amp;q=100 320w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=384&amp;q=100 384w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=576&amp;q=100 576w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=768&amp;q=100 768w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=1024&amp;q=100 1024w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=1366&amp;q=100 1366w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=1600&amp;q=100 1600w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=1920&amp;q=100 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=2560&amp;q=100 2560w\" src=\"https://devplatform.meetupspark.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=2560&amp;q=100\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;\">",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".swiper-slide-next > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<h2 class=\"styles_titleText__DYHYz\">Investor<\/h2>",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".swiper-slide-next > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_content__M_2UH > .styles_title__0d7u5 > h2"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<p class=\"styles_shortDesc__fep_d\">Venture capitalists with an operational background tend to be former founders or executives of companies similar to those the partnership will fund or will serve as consultants management advice.<\/p>",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".swiper-slide-next > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_content__M_2UH > .styles_overlay__em7Fq > .styles_shortDesc__fep_d"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<img alt=\"background\" fetchpriority=\"high\" decoding=\"async\" data-nimg=\"fill\" class=\"styles_backgroundImg__OCm3k\" sizes=\"(max-width: 576px) 100vw, (max-width: 1200px) 33vw, 25vw\" srcset=\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-enterprise.8a989bd8.png&amp;w=96&amp;q=100 96w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-enterprise.8a989bd8.png&amp;w=128&amp;q=100 128w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-enterprise.8a989bd8.png&amp;w=256&amp;q=100 256w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-enterprise.8a989bd8.png&amp;w=320&amp;q=100 320w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-enterprise.8a989bd8.png&amp;w=384&amp;q=100 384w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-enterprise.8a989bd8.png&amp;w=576&amp;q=100 576w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-enterprise.8a989bd8.png&amp;w=768&amp;q=100 768w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-enterprise.8a989bd8.png&amp;w=1024&amp;q=100 1024w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-enterprise.8a989bd8.png&amp;w=1366&amp;q=100 1366w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-enterprise.8a989bd8.png&amp;w=1600&amp;q=100 1600w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-enterprise.8a989bd8.png&amp;w=1920&amp;q=100 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-enterprise.8a989bd8.png&amp;w=2560&amp;q=100 2560w\" src=\"https://devplatform.meetupspark.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-enterprise.8a989bd8.png&amp;w=2560&amp;q=100\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;\">",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".swiper-slide:nth-child(3) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<h2 class=\"styles_titleText__DYHYz\">Enterprise<\/h2>",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".swiper-slide:nth-child(3) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5 > h2"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<img alt=\"background\" fetchpriority=\"high\" decoding=\"async\" data-nimg=\"fill\" class=\"styles_backgroundImg__OCm3k\" sizes=\"(max-width: 576px) 100vw, (max-width: 1200px) 33vw, 25vw\" srcset=\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=96&amp;q=100 96w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=128&amp;q=100 128w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=256&amp;q=100 256w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=320&amp;q=100 320w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=384&amp;q=100 384w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=576&amp;q=100 576w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=768&amp;q=100 768w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=1024&amp;q=100 1024w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=1366&amp;q=100 1366w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=1600&amp;q=100 1600w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=1920&amp;q=100 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=2560&amp;q=100 2560w\" src=\"https://devplatform.meetupspark.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=2560&amp;q=100\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;\">",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".swiper-slide:nth-child(4) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<h2 class=\"styles_titleText__DYHYz\">Service Provider<\/h2>",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".swiper-slide:nth-child(4) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5 > h2"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<img alt=\"background\" fetchpriority=\"high\" decoding=\"async\" data-nimg=\"fill\" class=\"styles_backgroundImg__OCm3k\" sizes=\"(max-width: 576px) 100vw, (max-width: 1200px) 33vw, 25vw\" srcset=\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=96&amp;q=100 96w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=128&amp;q=100 128w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=256&amp;q=100 256w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=320&amp;q=100 320w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=384&amp;q=100 384w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=576&amp;q=100 576w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=768&amp;q=100 768w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=1024&amp;q=100 1024w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=1366&amp;q=100 1366w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=1600&amp;q=100 1600w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=1920&amp;q=100 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=2560&amp;q=100 2560w\" src=\"https://devplatform.meetupspark.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=2560&amp;q=100\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;\">",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".swiper-slide:nth-child(5) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<h2 class=\"styles_titleText__DYHYz\">Mentor<\/h2>",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".swiper-slide:nth-child(5) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5 > h2"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<img alt=\"background\" fetchpriority=\"high\" decoding=\"async\" data-nimg=\"fill\" class=\"styles_backgroundImg__OCm3k\" sizes=\"(max-width: 576px) 100vw, (max-width: 1200px) 33vw, 25vw\" srcset=\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=96&amp;q=100 96w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=128&amp;q=100 128w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=256&amp;q=100 256w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=320&amp;q=100 320w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=384&amp;q=100 384w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=576&amp;q=100 576w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=768&amp;q=100 768w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=1024&amp;q=100 1024w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=1366&amp;q=100 1366w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=1600&amp;q=100 1600w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=1920&amp;q=100 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=2560&amp;q=100 2560w\" src=\"https://devplatform.meetupspark.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-venture.36a7f9f4.png&amp;w=2560&amp;q=100\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;\">",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".swiper-slide:nth-child(6) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<h2 class=\"styles_titleText__DYHYz\">Incubator<\/h2>",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".swiper-slide:nth-child(6) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5 > h2"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<img alt=\"background\" fetchpriority=\"high\" decoding=\"async\" data-nimg=\"fill\" class=\"styles_backgroundImg__OCm3k\" sizes=\"(max-width: 576px) 100vw, (max-width: 1200px) 33vw, 25vw\" srcset=\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=96&amp;q=100 96w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=128&amp;q=100 128w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=256&amp;q=100 256w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=320&amp;q=100 320w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=384&amp;q=100 384w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=576&amp;q=100 576w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=768&amp;q=100 768w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=1024&amp;q=100 1024w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=1366&amp;q=100 1366w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=1600&amp;q=100 1600w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=1920&amp;q=100 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=2560&amp;q=100 2560w\" src=\"https://devplatform.meetupspark.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-service-provider.49e11bb7.png&amp;w=2560&amp;q=100\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;\">",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".swiper-slide:nth-child(7) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<h2 class=\"styles_titleText__DYHYz\">Educational and Research Institution<\/h2>",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".swiper-slide:nth-child(7) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5 > h2"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<img alt=\"background\" fetchpriority=\"high\" decoding=\"async\" data-nimg=\"fill\" class=\"styles_backgroundImg__OCm3k\" sizes=\"(max-width: 576px) 100vw, (max-width: 1200px) 33vw, 25vw\" srcset=\"/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=96&amp;q=100 96w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=128&amp;q=100 128w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=256&amp;q=100 256w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=320&amp;q=100 320w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=384&amp;q=100 384w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=576&amp;q=100 576w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=768&amp;q=100 768w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=1024&amp;q=100 1024w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=1366&amp;q=100 1366w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=1600&amp;q=100 1600w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=1920&amp;q=100 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=2560&amp;q=100 2560w\" src=\"https://devplatform.meetupspark.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freception-bg-startup.f0f39dc4.png&amp;w=2560&amp;q=100\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;\">",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".swiper-slide:nth-child(8) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .styles_backgroundImg__OCm3k[alt=\"background\"][decoding=\"async\"]"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<h2 class=\"styles_titleText__DYHYz\">Government and NGO<\/h2>",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".swiper-slide:nth-child(8) > .styles_container__M_XgX > .styles_wrapper__kq3k7.relative > .absolute.top-\\[50\\%\\].styles_title__0d7u5 > h2"]
+                    }
+                ],
+                "impact": "moderate",
+                "description": "Ensure all page content is contained by landmarks",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI",
+                "id": "region",
+                "tags": [
+                    "cat.keyboard",
+                    "best-practice"
+                ]
+            }
+        ],
+        "totalViolations": 7,
+        "url": "https://devplatform.meetupspark.com/"
+    },
+    {
+        "testing datetime": "2024-10-24T08:28:06.883570Z",
+        "violations": [
+            {
+                "help": "Elements must meet minimum color contrast ratio thresholds",
+                "nodes": [
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.87 (foreground color: #3e7bfa, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1",
+                        "impact": "serious",
+                        "html": "<a class=\"hover:cursor-click-black text-base-blue-400 font-regular\" href=\"/auth/forgot-password\">Forget password<\/a>",
+                        "none": [],
+                        "any": [{
+                            "data": {
+                                "contrastRatio": 3.87,
+                                "fgColor": "#3e7bfa",
+                                "messageKey": null,
+                                "bgColor": "#ffffff",
+                                "expectedContrastRatio": "4.5:1",
+                                "fontSize": "10.5pt (14px)",
+                                "fontWeight": "normal"
+                            },
+                            "relatedNodes": [{
+                                "html": "<div class=\"flex-1 h-screen md:h-full mx-auto bg-white\">",
+                                "target": [".h-screen"]
+                            }],
+                            "impact": "serious",
+                            "id": "color-contrast",
+                            "message": "Element has insufficient color contrast of 3.87 (foreground color: #3e7bfa, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                        }],
+                        "target": ["a[href$=\"forgot-password\"]"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.48 (foreground color: #ffffff, background color: #8951ff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1",
+                        "impact": "serious",
+                        "html": "<span>Log in<\/span>",
+                        "none": [],
+                        "any": [{
+                            "data": {
+                                "contrastRatio": 4.48,
+                                "fgColor": "#ffffff",
+                                "messageKey": null,
+                                "bgColor": "#8951ff",
+                                "expectedContrastRatio": "4.5:1",
+                                "fontSize": "10.5pt (14px)",
+                                "fontWeight": "bold"
+                            },
+                            "relatedNodes": [{
+                                "html": "<button type=\"submit\" class=\"ant-btn ant-btn-default mt-[48px] md:mt-[72px] w-full styles_customButton__Kz73v styles_typePrimary__bcpo8 styles_sizeLarge__LL9kA styles_roundedLarge___JA_Q\"><span>Log in<\/span><\/button>",
+                                "target": ["button"]
+                            }],
+                            "impact": "serious",
+                            "id": "color-contrast",
+                            "message": "Element has insufficient color contrast of 4.48 (foreground color: #ffffff, background color: #8951ff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+                        }],
+                        "target": ["button > span"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.87 (foreground color: #3e7bfa, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1",
+                        "impact": "serious",
+                        "html": "<span>Create an account<\/span>",
+                        "none": [],
+                        "any": [{
+                            "data": {
+                                "contrastRatio": 3.87,
+                                "fgColor": "#3e7bfa",
+                                "messageKey": null,
+                                "bgColor": "#ffffff",
+                                "expectedContrastRatio": "4.5:1",
+                                "fontSize": "10.5pt (14px)",
+                                "fontWeight": "bold"
+                            },
+                            "relatedNodes": [{
+                                "html": "<div class=\"flex-1 h-screen md:h-full mx-auto bg-white\">",
+                                "target": [".h-screen"]
+                            }],
+                            "impact": "serious",
+                            "id": "color-contrast",
+                            "message": "Element has insufficient color contrast of 3.87 (foreground color: #3e7bfa, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+                        }],
+                        "target": [".font-bold > span"]
+                    }
+                ],
+                "impact": "serious",
+                "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+                "id": "color-contrast",
+                "tags": [
+                    "cat.color",
+                    "wcag2aa",
+                    "wcag143",
+                    "TTv5",
+                    "TT13.c",
+                    "EN-301-549",
+                    "EN-9.1.4.3",
+                    "ACT"
+                ]
+            },
+            {
+                "help": "Document should have one main landmark",
+                "nodes": [{
+                    "all": [{
+                        "data": null,
+                        "relatedNodes": [],
+                        "impact": "moderate",
+                        "id": "page-has-main",
+                        "message": "Document does not have a main landmark"
+                    }],
+                    "failureSummary": "Fix all of the following:\n  Document does not have a main landmark",
+                    "impact": "moderate",
+                    "html": "<html lang=\"en\" style=\"--primary: #8951ff; --secondary: #977dff; --white: #fff; --blackOrigin: #000; --transparent: transparent; --background-primary: #f7f7f7; --background-secondary: #f8f8ff; --background-purple: #e7dcff; --disable: #b5b5b5; --red-100: #ffe5e5; --red-200: #ff8080; --red-300: #ff5c5c; --red-400: #ff3b3b; --red-500: #e53535; --green-100: #e3fff1; --green-200: #56eba1; --green-300: #39d98a; --green-400: #06c270; --green-500: #05a660; --green-userIcon: #1faf38; --blue-100: #e3eeff; --blue-200: #a8c8fe; --blue-300: #6396fe; --blue-400: #3e7bfa; --blue-500: #2268fa; --blue-blueBlack: #1c1c28; --blue-blueDark: #10004b; --yellow-100: #fffee5; --yellow-200: #fded72; --yellow-300: #fddd48; --yellow-400: #fc0; --yellow-500: #e5b800; --yellow-600: #e57a00; --yellow-pineapple: #f4bf00; --orange-100: #fff8e5; --orange-200: #fccc75; --orange-300: #fdac42; --orange-400: #f80; --orange-500: #e57a00; --teal-100: #e5ffff; --teal-200: #a9eff2; --teal-300: #73dfe7; --teal-400: #00cfde; --teal-500: #00b7c4; --purple-100: #efefff; --purple-200: #d5d5ff; --purple-300: #bdbeff; --purple-400: #9697ff; --purple-500: #7274ff; --magenta-100: #fff0f6; --magenta-200: #ffadd2; --magenta-300: #ff85c0; --magenta-400: #f759ab; --magenta-500: #eb2f96; --black-100: #1c1c28; --black-200: #3e3e3e; --black-300: #636363; --black-400: #8f90a6; --black-500: #c7c9d9; --black-600: #e8e9ee; --black-700: #f1f2f5; --gray: #333; --brown-200: #853800; --chart-100: #977dff; --chart-200: #fddd48; --chart-300: #06c270; --chart-400: #ff85c0; --chart-500: #6396fe; --chart-600: #00cfde; --chart-700: #8f90a6; --chart-800: #bdbeff; --chart-900: #fded72; --chart-1000: #39d98a; --chart-1100: #ffadd2; --chart-1200: #a8c8fe; --chart-1300: #73dfe7; --chart-1400: #c7c9d9; --chart-1500: #d5d5ff; --chart-1600: #fff8be; --chart-1700: #56eba1; --chart-1800: #e3eeff; --chart-1900: #a9eff2; overscroll-behavior-y: none;\">",
+                    "none": [],
+                    "any": [],
+                    "target": ["html"]
+                }],
+                "impact": "moderate",
+                "description": "Ensure the document has a main landmark",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/landmark-one-main?application=axeAPI",
+                "id": "landmark-one-main",
+                "tags": [
+                    "cat.semantics",
+                    "best-practice"
+                ]
+            },
+            {
+                "help": "Zooming and scaling must not be disabled",
+                "nodes": [{
+                    "all": [],
+                    "failureSummary": "Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices",
+                    "impact": "critical",
+                    "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">",
+                    "none": [],
+                    "any": [{
+                        "data": "user-scalable=no",
+                        "relatedNodes": [],
+                        "impact": "critical",
+                        "id": "meta-viewport",
+                        "message": "user-scalable=no on <meta> tag disables zooming on mobile devices"
+                    }],
+                    "target": ["meta[name=\"viewport\"]:nth-child(32)"]
+                }],
+                "impact": "critical",
+                "description": "Ensure <meta name=\"viewport\"> does not disable text scaling and zooming",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/meta-viewport?application=axeAPI",
+                "id": "meta-viewport",
+                "tags": [
+                    "cat.sensory-and-visual-cues",
+                    "wcag2aa",
+                    "wcag144",
+                    "EN-301-549",
+                    "EN-9.1.4.4",
+                    "ACT"
+                ]
+            },
+            {
+                "help": "Page should contain a level-one heading",
+                "nodes": [{
+                    "all": [{
+                        "data": null,
+                        "relatedNodes": [],
+                        "impact": "moderate",
+                        "id": "page-has-heading-one",
+                        "message": "Page must have a level-one heading"
+                    }],
+                    "failureSummary": "Fix all of the following:\n  Page must have a level-one heading",
+                    "impact": "moderate",
+                    "html": "<html lang=\"en\" style=\"--primary: #8951ff; --secondary: #977dff; --white: #fff; --blackOrigin: #000; --transparent: transparent; --background-primary: #f7f7f7; --background-secondary: #f8f8ff; --background-purple: #e7dcff; --disable: #b5b5b5; --red-100: #ffe5e5; --red-200: #ff8080; --red-300: #ff5c5c; --red-400: #ff3b3b; --red-500: #e53535; --green-100: #e3fff1; --green-200: #56eba1; --green-300: #39d98a; --green-400: #06c270; --green-500: #05a660; --green-userIcon: #1faf38; --blue-100: #e3eeff; --blue-200: #a8c8fe; --blue-300: #6396fe; --blue-400: #3e7bfa; --blue-500: #2268fa; --blue-blueBlack: #1c1c28; --blue-blueDark: #10004b; --yellow-100: #fffee5; --yellow-200: #fded72; --yellow-300: #fddd48; --yellow-400: #fc0; --yellow-500: #e5b800; --yellow-600: #e57a00; --yellow-pineapple: #f4bf00; --orange-100: #fff8e5; --orange-200: #fccc75; --orange-300: #fdac42; --orange-400: #f80; --orange-500: #e57a00; --teal-100: #e5ffff; --teal-200: #a9eff2; --teal-300: #73dfe7; --teal-400: #00cfde; --teal-500: #00b7c4; --purple-100: #efefff; --purple-200: #d5d5ff; --purple-300: #bdbeff; --purple-400: #9697ff; --purple-500: #7274ff; --magenta-100: #fff0f6; --magenta-200: #ffadd2; --magenta-300: #ff85c0; --magenta-400: #f759ab; --magenta-500: #eb2f96; --black-100: #1c1c28; --black-200: #3e3e3e; --black-300: #636363; --black-400: #8f90a6; --black-500: #c7c9d9; --black-600: #e8e9ee; --black-700: #f1f2f5; --gray: #333; --brown-200: #853800; --chart-100: #977dff; --chart-200: #fddd48; --chart-300: #06c270; --chart-400: #ff85c0; --chart-500: #6396fe; --chart-600: #00cfde; --chart-700: #8f90a6; --chart-800: #bdbeff; --chart-900: #fded72; --chart-1000: #39d98a; --chart-1100: #ffadd2; --chart-1200: #a8c8fe; --chart-1300: #73dfe7; --chart-1400: #c7c9d9; --chart-1500: #d5d5ff; --chart-1600: #fff8be; --chart-1700: #56eba1; --chart-1800: #e3eeff; --chart-1900: #a9eff2; overscroll-behavior-y: none;\">",
+                    "none": [],
+                    "any": [],
+                    "target": ["html"]
+                }],
+                "impact": "moderate",
+                "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/page-has-heading-one?application=axeAPI",
+                "id": "page-has-heading-one",
+                "tags": [
+                    "cat.semantics",
+                    "best-practice"
+                ]
+            },
+            {
+                "help": "All page content should be contained by landmarks",
+                "nodes": [
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<div class=\"relative md:w-[45%] h-[63vh] md:h-screen \">",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".md\\:w-\\[45\\%\\]"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<p style=\"color: rgb(28, 28, 28);\">EN<\/p>",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".ant-dropdown-trigger > p"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<div class=\"flex justify-center\">",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".w-\\[460px\\] > .justify-center.flex"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<div class=\"my-[24px] md:my-[56px] ant-flex ant-flex-align-center ant-flex-gap-small ant-flex-vertical\"><span class=\"text-3xl text-base-black-200\">Log in<\/span><span class=\"text-base-black-200\">Welcome to our Platform Meetup Spark<\/span><\/div>",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".my-\\[24px\\]"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<input placeholder=\"name@email.com\" maxlength=\"100\" id=\"login-form_email\" aria-required=\"true\" class=\"ant-input ant-input-outlined\" type=\"text\" value=\"\">",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": ["#login-form_email"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<input placeholder=\"*********\" maxlength=\"100\" id=\"login-form_password\" aria-required=\"true\" type=\"password\" class=\"ant-input\">",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": ["#login-form_password"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<div class=\"ant-flex ant-flex-justify-space-between\">",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".ant-flex-justify-space-between"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<div class=\"gap-[4px] mt-6 ant-flex ant-flex-justify-center\"><span class=\"text-base-black-300\">Don't have an account?<\/span><a class=\"hover:cursor-click-black text-base-blue-400 font-bold\" href=\"/\"><span>Create an account<\/span><\/a><\/div>",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".gap-\\[4px\\]"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<div class=\"ant-divider ant-divider-horizontal ant-divider-with-text ant-divider-with-text-center font-regular text-base-black-300 m-0\" role=\"separator\"><span class=\"ant-divider-inner-text\">Or sign in by email<\/span><\/div>",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".ant-divider"]
+                    },
+                    {
+                        "all": [],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                        "impact": "moderate",
+                        "html": "<div class=\"text-[#888888] py-[30px] max-sm:text-xs text-center\">© 2024 EI Dorado Formula. All rights reserved.<\/div>",
+                        "none": [],
+                        "any": [{
+                            "data": {"isIframe": false},
+                            "relatedNodes": [],
+                            "impact": "moderate",
+                            "id": "region",
+                            "message": "Some page content is not contained by landmarks"
+                        }],
+                        "target": [".text-\\[\\#888888\\]"]
+                    }
+                ],
+                "impact": "moderate",
+                "description": "Ensure all page content is contained by landmarks",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI",
+                "id": "region",
+                "tags": [
+                    "cat.keyboard",
+                    "best-practice"
+                ]
+            }
+        ],
+        "totalViolations": 5,
+        "url": "https://devplatform.meetupspark.com/auth/login"
+    }
+]

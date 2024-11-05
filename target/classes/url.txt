@@ -1,0 +1,2 @@
+https://devplatform.meetupspark.com/
+https://devplatform.meetupspark.com/auth/login
